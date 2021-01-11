@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function showAlert() {
+        alert("This is an alert message");
+      }
+      document
+        .getElementById("myBtn")
+        .addEventListener(xhr.onreadystatechange, showAlert());
+      var url = "http://api.icndb.com/jokes/random";
+
+      function load(url, callback) {
+        var xhr = new XMLHttpRequest();
+
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            callback(xhr.response);
+          }
+        };
+
+        xhr.open("GET", url, true);
+        xhr.send("");
+      }
+    </script>
+    HTML5 BOOTCAMP
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body>
+    <section>
+      document.write(xhr.onreadystatechange)
+      <h1>Overview</h1>
+      <p1>
+        This is a HTML5 BOOTCAMP where we learn the basics of software
+        development
+      </p1>
+    </section>
+    <section style="display: none"><p2>Hello World</p2></section>
+    <button id="myBtn">Click me</button>
+  </body>
+</html>
